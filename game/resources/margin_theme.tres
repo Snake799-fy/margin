@@ -1,0 +1,114 @@
+[gd_resource type="Theme" load_steps=17 format=3]
+
+[ext_resource type="Texture2D" path="res://art/ui/ui_button_disabled.png" id="1_mtc1g"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_button_hover.png" id="2_r7fvn"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_button_normal.png" id="3_v6wfk"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_button_pressed.png" id="4_unvip"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_card.png" id="5_aic40"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_card_alert.png" id="6_mlud1"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_panel_console.png" id="7_8ay1h"]
+[ext_resource type="FontFile" path="res://fonts/press_start_2p.tres" id="8_e0tix"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yqci8"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+texture = ExtResource("1_mtc1g")
+texture_margin_left = 4.0
+texture_margin_top = 3.0
+texture_margin_right = 4.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sptuj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aagtk"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+texture = ExtResource("2_r7fvn")
+texture_margin_left = 4.0
+texture_margin_top = 3.0
+texture_margin_right = 4.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tv6ct"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+texture = ExtResource("3_v6wfk")
+texture_margin_left = 4.0
+texture_margin_top = 3.0
+texture_margin_right = 4.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a44w5"]
+content_margin_left = 6.0
+content_margin_top = 5.0
+content_margin_right = 6.0
+content_margin_bottom = 5.0
+texture = ExtResource("4_unvip")
+texture_margin_left = 4.0
+texture_margin_top = 3.0
+texture_margin_right = 4.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cbfgu"]
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("5_aic40")
+texture_margin_left = 6.0
+texture_margin_top = 12.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o68ok"]
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("6_mlud1")
+texture_margin_left = 6.0
+texture_margin_top = 12.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qf6sq"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+texture = ExtResource("7_8ay1h")
+texture_margin_left = 8.0
+texture_margin_top = 8.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
+
+[resource]
+default_font = ExtResource("8_e0tix")
+default_font_size = 8
+Button/colors/font_color = Color(0.956863, 0.941176, 0.909804, 1)
+Button/colors/font_disabled_color = Color(0.627451, 0.627451, 0.690196, 1)
+Button/colors/font_focus_color = Color(0.956863, 0.941176, 0.909804, 1)
+Button/colors/font_hover_color = Color(0.101961, 0.0627451, 0.12549, 1)
+Button/colors/font_hover_pressed_color = Color(0.956863, 0.941176, 0.909804, 1)
+Button/colors/font_pressed_color = Color(0.956863, 0.941176, 0.909804, 1)
+Button/styles/disabled = SubResource("StyleBoxTexture_yqci8")
+Button/styles/focus = SubResource("StyleBoxEmpty_sptuj")
+Button/styles/hover = SubResource("StyleBoxTexture_aagtk")
+Button/styles/normal = SubResource("StyleBoxTexture_tv6ct")
+Button/styles/pressed = SubResource("StyleBoxTexture_a44w5")
+CardPanel/base_type = &"PanelContainer"
+CardPanel/styles/panel = SubResource("StyleBoxTexture_cbfgu")
+CardPanelAlert/base_type = &"PanelContainer"
+CardPanelAlert/styles/panel = SubResource("StyleBoxTexture_o68ok")
+CardText/base_type = &"Label"
+CardText/colors/font_color = Color(0.101961, 0.0627451, 0.12549, 1)
+Label/colors/font_color = Color(0.956863, 0.941176, 0.909804, 1)
+Panel/styles/panel = SubResource("StyleBoxTexture_qf6sq")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_qf6sq")
+RichTextLabel/colors/default_color = Color(0.956863, 0.941176, 0.909804, 1)

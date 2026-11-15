@@ -1,0 +1,11 @@
+# Godot (cache and local builds)
+game/.godot/
+game/build/
+game/android/
+*.tmp
+
+# Local archive: old zips, duplicate copies and Portuguese originals (not in the repository)
+archive/
+
+# Personal Obsidian state
+notes/.obsidian/workspace.json

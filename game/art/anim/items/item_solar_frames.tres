@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://art/anim/items/item_solar_shine.png" id="1_shine"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_0"]
+atlas = ExtResource("1_shine")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_1"]
+atlas = ExtResource("1_shine")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_2"]
+atlas = ExtResource("1_shine")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_3"]
+atlas = ExtResource("1_shine")
+region = Rect2(96, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_4"]
+atlas = ExtResource("1_shine")
+region = Rect2(128, 0, 32, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_3")
+}, {
+"duration": 12.0,
+"texture": SubResource("AtlasTexture_shine_4")
+}],
+"loop": true,
+"name": &"shine",
+"speed": 8.0
+}]

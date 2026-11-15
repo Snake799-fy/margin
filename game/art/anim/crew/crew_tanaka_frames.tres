@@ -1,0 +1,183 @@
+[gd_resource type="SpriteFrames" load_steps=27 format=3]
+
+[ext_resource type="Texture2D" path="res://art/anim/crew/crew_tanaka_idle_normal.png" id="1_idle_normal"]
+[ext_resource type="Texture2D" path="res://art/anim/crew/crew_tanaka_talk_normal.png" id="2_talk_normal"]
+[ext_resource type="Texture2D" path="res://art/anim/crew/crew_tanaka_idle_worried.png" id="3_idle_worried"]
+[ext_resource type="Texture2D" path="res://art/anim/crew/crew_tanaka_talk_worried.png" id="4_talk_worried"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_normal_0"]
+atlas = ExtResource("1_idle_normal")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_normal_1"]
+atlas = ExtResource("1_idle_normal")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_normal_2"]
+atlas = ExtResource("1_idle_normal")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_normal_3"]
+atlas = ExtResource("1_idle_normal")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_0"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_1"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_2"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_3"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_4"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_normal_5"]
+atlas = ExtResource("2_talk_normal")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_0"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_1"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_2"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_3"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_4"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_worried_5"]
+atlas = ExtResource("3_idle_worried")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_0"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_1"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_2"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_3"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_4"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_talk_worried_5"]
+atlas = ExtResource("4_talk_worried")
+region = Rect2(240, 0, 48, 48)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 20.0,
+"texture": SubResource("AtlasTexture_idle_normal_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_normal_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_normal_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_normal_3")
+}],
+"loop": true,
+"name": &"idle_normal",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_normal_5")
+}],
+"loop": true,
+"name": &"talk_normal",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_idle_worried_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_worried_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_worried_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_worried_3")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_idle_worried_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_idle_worried_5")
+}],
+"loop": true,
+"name": &"idle_worried",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_talk_worried_5")
+}],
+"loop": true,
+"name": &"talk_worried",
+"speed": 10.0
+}]

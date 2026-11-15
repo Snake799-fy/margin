@@ -1,0 +1,1389 @@
+{
+ "eva_vega": {
+  "sprite_frames": "res://art/anim/crew/eva_vega_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/crew/eva_vega_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle: sub-pixel breathing, visor shine, helmet light (~1 s per cycle)"
+   },
+   "walk": {
+    "sheet": "res://art/anim/crew/eva_vega_walk.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "side walk (contact/passing, arm opposite the leg) facing right; flip_h for left. Move at ~32 px/s so the foot does not \"slide\""
+   },
+   "work": {
+    "sheet": "res://art/anim/crew/eva_vega_work.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     2.0,
+     2.5,
+     0.6,
+     2.0,
+     1.5,
+     1.5
+    ],
+    "note": "collecting a sample: anticipation, strike, held impact, recovery"
+   },
+   "wave": {
+    "sheet": "res://art/anim/crew/eva_vega_wave.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 5,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "waving (report, title, landing)"
+   }
+  }
+ },
+ "eva_okoye": {
+  "sprite_frames": "res://art/anim/crew/eva_okoye_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/crew/eva_okoye_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle: sub-pixel breathing, visor shine, helmet light (~1 s per cycle)"
+   },
+   "walk": {
+    "sheet": "res://art/anim/crew/eva_okoye_walk.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "side walk (contact/passing, arm opposite the leg) facing right; flip_h for left. Move at ~32 px/s so the foot does not \"slide\""
+   },
+   "work": {
+    "sheet": "res://art/anim/crew/eva_okoye_work.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     2.0,
+     2.5,
+     0.6,
+     2.0,
+     1.5,
+     1.5
+    ],
+    "note": "collecting a sample: anticipation, strike, held impact, recovery"
+   },
+   "wave": {
+    "sheet": "res://art/anim/crew/eva_okoye_wave.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 5,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "waving (report, title, landing)"
+   }
+  }
+ },
+ "eva_tanaka": {
+  "sprite_frames": "res://art/anim/crew/eva_tanaka_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/crew/eva_tanaka_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle: sub-pixel breathing, visor shine, helmet light (~1 s per cycle)"
+   },
+   "walk": {
+    "sheet": "res://art/anim/crew/eva_tanaka_walk.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "side walk (contact/passing, arm opposite the leg) facing right; flip_h for left. Move at ~32 px/s so the foot does not \"slide\""
+   },
+   "work": {
+    "sheet": "res://art/anim/crew/eva_tanaka_work.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     2.0,
+     2.5,
+     0.6,
+     2.0,
+     1.5,
+     1.5
+    ],
+    "note": "collecting a sample: anticipation, strike, held impact, recovery"
+   },
+   "wave": {
+    "sheet": "res://art/anim/crew/eva_tanaka_wave.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 5,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "waving (report, title, landing)"
+   }
+  }
+ },
+ "eva_duarte": {
+  "sprite_frames": "res://art/anim/crew/eva_duarte_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/crew/eva_duarte_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle: sub-pixel breathing, visor shine, helmet light (~1 s per cycle)"
+   },
+   "walk": {
+    "sheet": "res://art/anim/crew/eva_duarte_walk.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "side walk (contact/passing, arm opposite the leg) facing right; flip_h for left. Move at ~32 px/s so the foot does not \"slide\""
+   },
+   "work": {
+    "sheet": "res://art/anim/crew/eva_duarte_work.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     2.0,
+     2.5,
+     0.6,
+     2.0,
+     1.5,
+     1.5
+    ],
+    "note": "collecting a sample: anticipation, strike, held impact, recovery"
+   },
+   "wave": {
+    "sheet": "res://art/anim/crew/eva_duarte_wave.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 5,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "waving (report, title, landing)"
+   }
+  }
+ },
+ "map_rover_open": {
+  "sprite_frames": "res://art/anim/map/map_rover_open_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/map/map_rover_open_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "durations": [
+     4.0,
+     1.0
+    ],
+    "note": "idle; console light blinks"
+   },
+   "drive": {
+    "sheet": "res://art/anim/map/map_rover_open_drive.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "driving; dust behind"
+   }
+  }
+ },
+ "map_rover_pressurized": {
+  "sprite_frames": "res://art/anim/map/map_rover_pressurized_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/map/map_rover_pressurized_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "durations": [
+     3.0,
+     1.0
+    ],
+    "note": "idle; headlights blink"
+   },
+   "drive": {
+    "sheet": "res://art/anim/map/map_rover_pressurized_drive.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "driving; dust behind"
+   }
+  }
+ },
+ "map_marker_target": {
+  "sprite_frames": "res://art/anim/map/map_marker_target_frames.tres",
+  "animations": {
+   "bob": {
+    "sheet": "res://art/anim/map/map_marker_target_bob.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     2.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "note": "science target floating (loop)"
+   }
+  }
+ },
+ "map_cursor": {
+  "sprite_frames": "res://art/anim/map/map_cursor_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/map/map_cursor_pulse.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "selection cursor pulsing"
+   }
+  }
+ },
+ "map_path_arrow": {
+  "sprite_frames": "res://art/anim/map/map_path_arrow_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/map/map_path_arrow_pulse.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "path tip, points right (rotate with rotation)"
+   }
+  }
+ },
+ "map_path_dot": {
+  "sprite_frames": "res://art/anim/map/map_path_dot_frames.tres",
+  "animations": {
+   "blink": {
+    "sheet": "res://art/anim/map/map_path_dot_blink.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 3,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     2.0,
+     1.0,
+     1.0
+    ],
+    "note": "path dots; offset the start frame per cell for a \"marching\" effect"
+   }
+  }
+ },
+ "crew_vega": {
+  "sprite_frames": "res://art/anim/crew/crew_vega_frames.tres",
+  "animations": {
+   "idle_normal": {
+    "sheet": "res://art/anim/crew/crew_vega_idle_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     20.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle portrait, blinks every ~2.5 s"
+   },
+   "talk_normal": {
+    "sheet": "res://art/anim/crew/crew_vega_talk_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking (loop while the text appears; when done, go back to idle_normal)"
+   },
+   "idle_worried": {
+    "sheet": "res://art/anim/crew/crew_vega_idle_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     10.0,
+     1.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "note": "worried, blinks more often and twice"
+   },
+   "talk_worried": {
+    "sheet": "res://art/anim/crew/crew_vega_talk_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking, worried"
+   }
+  }
+ },
+ "crew_okoye": {
+  "sprite_frames": "res://art/anim/crew/crew_okoye_frames.tres",
+  "animations": {
+   "idle_normal": {
+    "sheet": "res://art/anim/crew/crew_okoye_idle_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     20.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle portrait, blinks every ~2.5 s"
+   },
+   "talk_normal": {
+    "sheet": "res://art/anim/crew/crew_okoye_talk_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking (loop while the text appears; when done, go back to idle_normal)"
+   },
+   "idle_worried": {
+    "sheet": "res://art/anim/crew/crew_okoye_idle_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     10.0,
+     1.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "note": "worried, blinks more often and twice"
+   },
+   "talk_worried": {
+    "sheet": "res://art/anim/crew/crew_okoye_talk_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking, worried"
+   }
+  }
+ },
+ "crew_tanaka": {
+  "sprite_frames": "res://art/anim/crew/crew_tanaka_frames.tres",
+  "animations": {
+   "idle_normal": {
+    "sheet": "res://art/anim/crew/crew_tanaka_idle_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     20.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle portrait, blinks every ~2.5 s"
+   },
+   "talk_normal": {
+    "sheet": "res://art/anim/crew/crew_tanaka_talk_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking (loop while the text appears; when done, go back to idle_normal)"
+   },
+   "idle_worried": {
+    "sheet": "res://art/anim/crew/crew_tanaka_idle_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     10.0,
+     1.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "note": "worried, blinks more often and twice"
+   },
+   "talk_worried": {
+    "sheet": "res://art/anim/crew/crew_tanaka_talk_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking, worried"
+   }
+  }
+ },
+ "crew_duarte": {
+  "sprite_frames": "res://art/anim/crew/crew_duarte_frames.tres",
+  "animations": {
+   "idle_normal": {
+    "sheet": "res://art/anim/crew/crew_duarte_idle_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     20.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "idle portrait, blinks every ~2.5 s"
+   },
+   "talk_normal": {
+    "sheet": "res://art/anim/crew/crew_duarte_talk_normal.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking (loop while the text appears; when done, go back to idle_normal)"
+   },
+   "idle_worried": {
+    "sheet": "res://art/anim/crew/crew_duarte_idle_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     10.0,
+     1.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0
+    ],
+    "note": "worried, blinks more often and twice"
+   },
+   "talk_worried": {
+    "sheet": "res://art/anim/crew/crew_duarte_talk_worried.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "talking, worried"
+   }
+  }
+ },
+ "res_power": {
+  "sprite_frames": "res://art/anim/ui/res_power_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_power_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     8.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "power icon: spark"
+   }
+  }
+ },
+ "res_comms": {
+  "sprite_frames": "res://art/anim/ui/res_comms_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_comms_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 5,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "communications icon: pulsing waves"
+   }
+  }
+ },
+ "res_time": {
+  "sprite_frames": "res://art/anim/ui/res_time_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_time_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "time icon: falling sand"
+   }
+  }
+ },
+ "res_data": {
+  "sprite_frames": "res://art/anim/ui/res_data_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_data_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "data icon: reading"
+   }
+  }
+ },
+ "res_budget": {
+  "sprite_frames": "res://art/anim/ui/res_budget_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_budget_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     14.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "budget icon: coin shine"
+   }
+  }
+ },
+ "res_mass": {
+  "sprite_frames": "res://art/anim/ui/res_mass_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/ui/res_mass_idle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     14.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "mass icon: shine"
+   }
+  }
+ },
+ "ui_alert_icon": {
+  "sprite_frames": "res://art/anim/ui/ui_alert_icon_frames.tres",
+  "animations": {
+   "blink": {
+    "sheet": "res://art/anim/ui/ui_alert_icon_blink.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "warning icon (triangle) blinking"
+   }
+  }
+ },
+ "ui_bar_fill_red": {
+  "sprite_frames": "res://art/anim/ui/ui_bar_fill_red_frames.tres",
+  "animations": {
+   "blink": {
+    "sheet": "res://art/anim/ui/ui_bar_fill_red_blink.png",
+    "frame_w": 16,
+    "frame_h": 8,
+    "frames": 2,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "critical bar blinking; use as texture_progress by swapping the frame (same 9-slice margins: 2)"
+   }
+  }
+ },
+ "ui_card_alert": {
+  "sprite_frames": "res://art/anim/ui/ui_card_alert_frames.tres",
+  "animations": {
+   "blink": {
+    "sheet": "res://art/anim/ui/ui_card_alert_blink.png",
+    "frame_w": 32,
+    "frame_h": 32,
+    "frames": 2,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "alert card header blinks red/rust; NinePatchRect margins L6 T12 R6 B6"
+   }
+  }
+ },
+ "title_bg": {
+  "sprite_frames": "res://art/anim/screens/title_bg_frames.tres",
+  "animations": {
+   "idle": {
+    "sheet": "res://art/anim/screens/title_bg_idle.png",
+    "frame_w": 320,
+    "frame_h": 180,
+    "frames": 8,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "animated title background (stars, sun glow, habitat lights), WITHOUT astronauts: put title_crew_group or eva_* walking on top (ground at y≈128-142)"
+   }
+  }
+ },
+ "title_crew_group": {
+  "sprite_frames": "res://art/anim/screens/title_crew_group_frames.tres",
+  "animations": {
+   "walk": {
+    "sheet": "res://art/anim/screens/title_crew_group_walk.png",
+    "frame_w": 64,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "the 4 walking in a row to the right; move x with a Tween (e.g. from -64 to 330 in ~14 s, y=126) and repeat"
+   }
+  }
+ },
+ "logo_margin": {
+  "sprite_frames": "res://art/anim/screens/logo_margin_frames.tres",
+  "animations": {
+   "shine": {
+    "sheet": "res://art/anim/screens/logo_margin_shine.png",
+    "frame_w": 111,
+    "frame_h": 33,
+    "frames": 14,
+    "fps": 14,
+    "loop": true,
+    "durations": [
+     28.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "shine sweeping across the logo every ~2.5 s"
+   }
+  }
+ },
+ "event_dust_storm": {
+  "sprite_frames": "res://art/anim/events/event_dust_storm_frames.tres",
+  "animations": {
+   "loop": {
+    "sheet": "res://art/anim/events/event_dust_storm_loop.png",
+    "frame_w": 160,
+    "frame_h": 90,
+    "frames": 6,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "moving wall of dust and gusts; continuous loop"
+   }
+  }
+ },
+ "event_solar_particle_event": {
+  "sprite_frames": "res://art/anim/events/event_solar_particle_event_frames.tres",
+  "animations": {
+   "loop": {
+    "sheet": "res://art/anim/events/event_solar_particle_event_loop.png",
+    "frame_w": 160,
+    "frame_h": 90,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "rain of particles and pulsing corona; continuous loop"
+   }
+  }
+ },
+ "event_equipment_failure": {
+  "sprite_frames": "res://art/anim/events/event_equipment_failure_frames.tres",
+  "animations": {
+   "loop": {
+    "sheet": "res://art/anim/events/event_equipment_failure_loop.png",
+    "frame_w": 160,
+    "frame_h": 90,
+    "frames": 6,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "rising smoke, sparks and blinking warning; continuous loop"
+   }
+  }
+ },
+ "lander": {
+  "sprite_frames": "res://art/anim/screens/lander_frames.tres",
+  "animations": {
+   "descent": {
+    "sheet": "res://art/anim/screens/lander_descent.png",
+    "frame_w": 32,
+    "frame_h": 40,
+    "frames": 4,
+    "fps": 12,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "descending with the engine on; move y with a Tween. Anchor: footpads at y=27 of the frame (32x40)"
+   },
+   "landed": {
+    "sheet": "res://art/anim/screens/lander_landed.png",
+    "frame_w": 32,
+    "frame_h": 40,
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "durations": [
+     3.0,
+     1.0
+    ],
+    "note": "landed, lights blinking"
+   }
+  }
+ },
+ "touchdown_dust": {
+  "sprite_frames": "res://art/anim/screens/touchdown_dust_frames.tres",
+  "animations": {
+   "burst": {
+    "sheet": "res://art/anim/screens/touchdown_dust_burst.png",
+    "frame_w": 80,
+    "frame_h": 24,
+    "frames": 7,
+    "fps": 12,
+    "loop": false,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "dust cloud on touchdown (NOT a loop). Center on the ship's x, base on the ground; hide when finished"
+   }
+  }
+ },
+ "tile_target": {
+  "sprite_frames": "res://art/anim/map/tile_target_frames.tres",
+  "animations": {
+   "sparkle": {
+    "sheet": "res://art/anim/map/tile_target_sparkle.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     6.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "target tile with shine; use as an AnimatedSprite2D on top of the TileMap or as an animated tile in the TileSet"
+   }
+  }
+ },
+ "tile_lander": {
+  "sprite_frames": "res://art/anim/map/tile_lander_frames.tres",
+  "animations": {
+   "blink": {
+    "sheet": "res://art/anim/map/tile_lander_blink.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 2,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "landing light blinking"
+   }
+  }
+ },
+ "map_fog": {
+  "sprite_frames": "res://art/anim/map/map_fog_frames.tres",
+  "animations": {
+   "shimmer": {
+    "sheet": "res://art/anim/map/map_fog_shimmer.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "fog moving slowly; when revealing, fade with modulate.a"
+   }
+  }
+ },
+ "item_fsp": {
+  "sprite_frames": "res://art/anim/items/item_fsp_frames.tres",
+  "animations": {
+   "active": {
+    "sheet": "res://art/anim/items/item_fsp_active.png",
+    "frame_w": 32,
+    "frame_h": 32,
+    "frames": 4,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "reactor on: pulsing heat glow"
+   }
+  }
+ },
+ "item_eclss": {
+  "sprite_frames": "res://art/anim/items/item_eclss_frames.tres",
+  "animations": {
+   "active": {
+    "sheet": "res://art/anim/items/item_eclss_active.png",
+    "frame_w": 32,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "life support: fan spinning, green light"
+   }
+  }
+ },
+ "item_battery": {
+  "sprite_frames": "res://art/anim/items/item_battery_frames.tres",
+  "animations": {
+   "charging": {
+    "sheet": "res://art/anim/items/item_battery_charging.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "battery charging (bars filling up)"
+   }
+  }
+ },
+ "item_uhf": {
+  "sprite_frames": "res://art/anim/items/item_uhf_frames.tres",
+  "animations": {
+   "active": {
+    "sheet": "res://art/anim/items/item_uhf_active.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 3,
+    "fps": 4,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "radio transmitting"
+   }
+  }
+ },
+ "item_met": {
+  "sprite_frames": "res://art/anim/items/item_met_frames.tres",
+  "animations": {
+   "active": {
+    "sheet": "res://art/anim/items/item_met_active.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "anemometer spinning"
+   }
+  }
+ },
+ "item_spectrometer": {
+  "sprite_frames": "res://art/anim/items/item_spectrometer_frames.tres",
+  "animations": {
+   "active": {
+    "sheet": "res://art/anim/items/item_spectrometer_active.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "spectrum changing on the screen"
+   }
+  }
+ },
+ "item_solar": {
+  "sprite_frames": "res://art/anim/items/item_solar_frames.tres",
+  "animations": {
+   "shine": {
+    "sheet": "res://art/anim/items/item_solar_shine.png",
+    "frame_w": 32,
+    "frame_h": 16,
+    "frames": 5,
+    "fps": 8,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     12.0
+    ],
+    "note": "reflection sweeping across the panel"
+   }
+  }
+ },
+ "adj_heat": {
+  "sprite_frames": "res://art/anim/ui/adj_heat_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/ui/adj_heat_pulse.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "adjacency rule: HEAT (orange), rising waves"
+   }
+  }
+ },
+ "adj_contam": {
+  "sprite_frames": "res://art/anim/ui/adj_contam_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/ui/adj_contam_pulse.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "adjacency rule: CONTAMINATION (brown)"
+   }
+  }
+ },
+ "adj_shield": {
+  "sprite_frames": "res://art/anim/ui/adj_shield_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/ui/adj_shield_pulse.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 2,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "adjacency rule: SHIELDING (blue)"
+   }
+  }
+ },
+ "fx_dust_overlay": {
+  "sprite_frames": "res://art/anim/fx/fx_dust_overlay_frames.tres",
+  "animations": {
+   "loop": {
+    "sheet": "res://art/anim/fx/fx_dust_overlay_loop.png",
+    "frame_w": 320,
+    "frame_h": 180,
+    "frames": 8,
+    "fps": 10,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "semi-transparent dust over the whole screen (320x180) during a storm; continuous loop"
+   }
+  }
+ },
+ "fx_alert_vignette": {
+  "sprite_frames": "res://art/anim/fx/fx_alert_vignette_frames.tres",
+  "animations": {
+   "pulse": {
+    "sheet": "res://art/anim/fx/fx_alert_vignette_pulse.png",
+    "frame_w": 320,
+    "frame_h": 180,
+    "frames": 2,
+    "fps": 3,
+    "loop": true,
+    "durations": [
+     1.0,
+     1.0
+    ],
+    "note": "pulsing red border (critical alert); on top of everything"
+   }
+  }
+ },
+ "fx_sparkle": {
+  "sprite_frames": "res://art/anim/fx/fx_sparkle_frames.tres",
+  "animations": {
+   "burst": {
+    "sheet": "res://art/anim/fx/fx_sparkle_burst.png",
+    "frame_w": 16,
+    "frame_h": 16,
+    "frames": 6,
+    "fps": 12,
+    "loop": false,
+    "durations": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "note": "success sparkle (sample collected, objective met); NOT a loop"
+   }
+  }
+ }
+}

@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="SpriteFrames" path="res://art/anim/screens/title_bg_frames.tres" id="1_bg"]
+[ext_resource type="SpriteFrames" path="res://art/anim/screens/logo_margin_frames.tres" id="2_logo"]
+[ext_resource type="SpriteFrames" path="res://art/anim/screens/title_crew_group_frames.tres" id="3_crew"]
+[ext_resource type="Script" path="res://scripts/title.gd" id="4_title"]
+
+[sub_resource type="Animation" id="Animation_crew"]
+resource_name = "crew_walk"
+length = 12.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CrewGroup:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 12),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-64, 126), Vector2(330, 126)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_crew"]
+_data = {
+"crew_walk": SubResource("Animation_crew")
+}
+
+[sub_resource type="Animation" id="Animation_blink"]
+resource_name = "blink"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PressStart:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_blink"]
+_data = {
+"blink": SubResource("Animation_blink")
+}
+
+[node name="Title" type="Node2D"]
+script = ExtResource("4_title")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_bg")
+animation = &"idle"
+autoplay = "idle"
+centered = false
+
+[node name="CrewGroup" type="AnimatedSprite2D" parent="."]
+position = Vector2(-64, 126)
+sprite_frames = ExtResource("3_crew")
+animation = &"walk"
+autoplay = "walk"
+centered = false
+
+[node name="Logo" type="AnimatedSprite2D" parent="."]
+position = Vector2(104, 22)
+sprite_frames = ExtResource("2_logo")
+animation = &"shine"
+autoplay = "shine"
+centered = false
+
+[node name="Subtitle" type="Label" parent="."]
+offset_top = 58.0
+offset_right = 320.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.941, 0.769, 0.541, 1)
+text = "A MARS MISSION DESIGN GAME"
+horizontal_alignment = 1
+
+[node name="PressStart" type="Label" parent="."]
+offset_top = 158.0
+offset_right = 320.0
+offset_bottom = 168.0
+text = "CLICK TO START"
+horizontal_alignment = 1
+
+[node name="CrewAnim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_crew")
+}
+autoplay = "crew_walk"
+
+[node name="BlinkAnim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_blink")
+}
+autoplay = "blink"

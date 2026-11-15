@@ -1,0 +1,134 @@
+{
+  "ui_panel_console": {
+    "size": [
+      24,
+      24
+    ],
+    "patch_margin": {
+      "left": 8,
+      "top": 8,
+      "right": 8,
+      "bottom": 8
+    }
+  },
+  "ui_button_normal": {
+    "size": [
+      16,
+      16
+    ],
+    "patch_margin": {
+      "left": 4,
+      "top": 3,
+      "right": 4,
+      "bottom": 5
+    }
+  },
+  "ui_button_hover": {
+    "size": [
+      16,
+      16
+    ],
+    "patch_margin": {
+      "left": 4,
+      "top": 3,
+      "right": 4,
+      "bottom": 5
+    }
+  },
+  "ui_button_pressed": {
+    "size": [
+      16,
+      16
+    ],
+    "patch_margin": {
+      "left": 4,
+      "top": 3,
+      "right": 4,
+      "bottom": 5
+    }
+  },
+  "ui_button_disabled": {
+    "size": [
+      16,
+      16
+    ],
+    "patch_margin": {
+      "left": 4,
+      "top": 3,
+      "right": 4,
+      "bottom": 5
+    }
+  },
+  "ui_bar_under": {
+    "size": [
+      16,
+      8
+    ],
+    "patch_margin": {
+      "left": 2,
+      "top": 2,
+      "right": 2,
+      "bottom": 2
+    }
+  },
+  "ui_bar_fill_green": {
+    "size": [
+      16,
+      8
+    ],
+    "patch_margin": {
+      "left": 2,
+      "top": 2,
+      "right": 2,
+      "bottom": 2
+    }
+  },
+  "ui_bar_fill_yellow": {
+    "size": [
+      16,
+      8
+    ],
+    "patch_margin": {
+      "left": 2,
+      "top": 2,
+      "right": 2,
+      "bottom": 2
+    }
+  },
+  "ui_bar_fill_red": {
+    "size": [
+      16,
+      8
+    ],
+    "patch_margin": {
+      "left": 2,
+      "top": 2,
+      "right": 2,
+      "bottom": 2
+    }
+  },
+  "ui_card": {
+    "size": [
+      32,
+      32
+    ],
+    "patch_margin": {
+      "left": 6,
+      "top": 12,
+      "right": 6,
+      "bottom": 6
+    }
+  },
+  "ui_card_alert": {
+    "size": [
+      32,
+      32
+    ],
+    "patch_margin": {
+      "left": 6,
+      "top": 12,
+      "right": 6,
+      "bottom": 6
+    }
+  }
+}

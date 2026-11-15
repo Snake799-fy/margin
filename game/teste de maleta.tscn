@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bwarewvchmdr3"]
+
+[ext_resource type="Script" uid="uid://bq47duwm7jj0j" path="res://teste_de_maleta.gd" id="1_5eh0u"]
+[ext_resource type="Texture2D" uid="uid://b4s7idxes56sl" path="res://art/ui/res_data.png" id="1_psmwf"]
+
+[node name="Control" type="Control" unique_id=691435117]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5eh0u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2071755638]
+position = Vector2(302, 10)
+texture = ExtResource("1_psmwf")

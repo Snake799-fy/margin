@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://csnvmagcocknh"]
+
+[ext_resource type="Texture2D" uid="uid://b4s7idxes56sl" path="res://art/ui/res_data.png" id="1_f7cmv"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=1725207716]
+position = Vector2(31, 30)
+scale = Vector2(4.425, 4.425)
+texture = ExtResource("1_f7cmv")

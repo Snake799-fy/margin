@@ -1,0 +1,109 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://d3hlo8qeubsks"]
+
+[ext_resource type="Texture2D" uid="uid://bxrg1lerm42al" path="res://art/anim/screens/logo_margin_shine.png" id="1_shine"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_0"]
+atlas = ExtResource("1_shine")
+region = Rect2(0, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_1"]
+atlas = ExtResource("1_shine")
+region = Rect2(111, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_2"]
+atlas = ExtResource("1_shine")
+region = Rect2(222, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_3"]
+atlas = ExtResource("1_shine")
+region = Rect2(333, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_4"]
+atlas = ExtResource("1_shine")
+region = Rect2(444, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_5"]
+atlas = ExtResource("1_shine")
+region = Rect2(555, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_6"]
+atlas = ExtResource("1_shine")
+region = Rect2(666, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_7"]
+atlas = ExtResource("1_shine")
+region = Rect2(777, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_8"]
+atlas = ExtResource("1_shine")
+region = Rect2(888, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_9"]
+atlas = ExtResource("1_shine")
+region = Rect2(999, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_10"]
+atlas = ExtResource("1_shine")
+region = Rect2(1110, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_11"]
+atlas = ExtResource("1_shine")
+region = Rect2(1221, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_12"]
+atlas = ExtResource("1_shine")
+region = Rect2(1332, 0, 111, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shine_13"]
+atlas = ExtResource("1_shine")
+region = Rect2(1443, 0, 111, 33)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 28.0,
+"texture": SubResource("AtlasTexture_shine_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_9")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_12")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shine_13")
+}],
+"loop": 1,
+"name": &"shine",
+"speed": 14.0
+}]

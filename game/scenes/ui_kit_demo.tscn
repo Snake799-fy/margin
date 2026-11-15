@@ -1,0 +1,116 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://art/ui/ui_bar_under.png" id="1_under"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_bar_fill_green.png" id="2_green"]
+[ext_resource type="Texture2D" path="res://art/ui/ui_bar_fill_red.png" id="3_red"]
+[ext_resource type="Texture2D" path="res://art/ui/res_power.png" id="4_power"]
+[ext_resource type="SpriteFrames" path="res://art/anim/crew/crew_okoye_frames.tres" id="5_okoye"]
+[ext_resource type="SpriteFrames" path="res://art/anim/crew/eva_tanaka_frames.tres" id="6_eva"]
+[ext_resource type="SpriteFrames" path="res://art/anim/ui/ui_alert_icon_frames.tres" id="7_alert"]
+
+[node name="UiKitDemo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Console" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="PowerIcon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 26.0
+offset_bottom = 26.0
+texture = ExtResource("4_power")
+
+[node name="PowerBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 14.0
+offset_right = 90.0
+offset_bottom = 22.0
+value = 70.0
+nine_patch_stretch = true
+stretch_margin_left = 2
+stretch_margin_top = 2
+stretch_margin_right = 2
+stretch_margin_bottom = 2
+texture_under = ExtResource("1_under")
+texture_progress = ExtResource("2_green")
+
+[node name="CriticalBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 26.0
+offset_right = 90.0
+offset_bottom = 34.0
+value = 20.0
+nine_patch_stretch = true
+stretch_margin_left = 2
+stretch_margin_top = 2
+stretch_margin_right = 2
+stretch_margin_bottom = 2
+texture_under = ExtResource("1_under")
+texture_progress = ExtResource("3_red")
+
+[node name="Card" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 110.0
+theme_type_variation = &"CardPanelAlert"
+
+[node name="VBox" type="VBoxContainer" parent="Card"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="Card/VBox"]
+layout_mode = 2
+text = "DUST STORM"
+
+[node name="Body" type="Label" parent="Card/VBox"]
+layout_mode = 2
+theme_type_variation = &"CardText"
+text = "Solar output -70%.
+What do you do?"
+autowrap_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Card/VBox"]
+layout_mode = 2
+
+[node name="Return" type="Button" parent="Card/VBox/Buttons"]
+layout_mode = 2
+text = "RETURN"
+
+[node name="Locked" type="Button" parent="Card/VBox/Buttons"]
+layout_mode = 2
+disabled = true
+text = "PUSH ON"
+
+[node name="Portrait" type="AnimatedSprite2D" parent="."]
+position = Vector2(10, 120)
+sprite_frames = ExtResource("5_okoye")
+animation = &"talk_worried"
+autoplay = "talk_worried"
+centered = false
+
+[node name="Astronaut" type="AnimatedSprite2D" parent="."]
+position = Vector2(80, 150)
+sprite_frames = ExtResource("6_eva")
+animation = &"walk"
+autoplay = "walk"
+centered = false
+
+[node name="AlertIcon" type="AnimatedSprite2D" parent="."]
+position = Vector2(290, 150)
+sprite_frames = ExtResource("7_alert")
+animation = &"blink"
+autoplay = "blink"
+centered = false

@@ -1,0 +1,739 @@
+{
+  "meta": {
+    "version": "0.1-first-pass",
+    "note": "Numbers simplified and balanced for play; tune in playtest. Real anchors must be checked at the source before publishing. All game text must be in English in the final version.",
+    "units": {
+      "mass": "t",
+      "cost": "M$ (game units)",
+      "energy": "kWh/sol",
+      "data": "Mb",
+      "supply": "sols"
+    }
+  },
+  "budget": 1800,
+  "core": {
+    "name": "Habitat + lander core",
+    "mass_t": 18,
+    "cost": 500,
+    "energy_kwh_sol": -49,
+    "base_supply_sols": 6,
+    "crew": 4
+  },
+  "stay_options_sols": [
+    8,
+    10,
+    12,
+    14
+  ],
+  "supply_reserve_sols": 2,
+  "windows": [
+    {
+      "id": "A",
+      "name": "Nominal window",
+      "dust_event_chance": 0.15,
+      "launcher_bonus_t": 0,
+      "text": "Less payload capacity, arrives outside dust season."
+    },
+    {
+      "id": "B",
+      "name": "Late window",
+      "dust_event_chance": 0.4,
+      "launcher_bonus_t": 5,
+      "text": "More payload capacity, arrives near dust season."
+    }
+  ],
+  "launchers": [
+    {
+      "id": "heavy",
+      "name": "Heavy-lift",
+      "capacity_t": 45,
+      "cost": 400
+    },
+    {
+      "id": "superheavy",
+      "name": "Super-heavy",
+      "capacity_t": 65,
+      "cost": 700
+    }
+  ],
+  "power_options_note": "Solar and fission are components in the cargo grid, not a separate choice.",
+  "comms_note": "Relay uses the crew vehicle in orbit; direct antenna works anytime but low rate.",
+  "grid": {
+    "cols": 7,
+    "rows": 5
+  },
+  "components": [
+    {
+      "id": "fsp",
+      "name": "Fission surface power (concept)",
+      "cat": "power",
+      "w": 2,
+      "h": 2,
+      "mass_t": 6,
+      "cost": 300,
+      "energy_kwh_sol": 240,
+      "tags": [
+        "hot"
+      ]
+    },
+    {
+      "id": "solar",
+      "name": "Solar array",
+      "cat": "power",
+      "w": 2,
+      "h": 1,
+      "mass_t": 2,
+      "cost": 45,
+      "energy_kwh_sol": 30,
+      "dust_factor": 0.3,
+      "stackable": 3,
+      "tags": []
+    },
+    {
+      "id": "battery",
+      "name": "Batteries",
+      "cat": "power",
+      "w": 1,
+      "h": 1,
+      "mass_t": 3,
+      "cost": 30,
+      "storage_kwh": 80,
+      "tags": [
+        "needs_heat"
+      ]
+    },
+    {
+      "id": "eclss",
+      "name": "Life support (recycling)",
+      "cat": "life",
+      "w": 2,
+      "h": 1,
+      "mass_t": 5,
+      "cost": 140,
+      "energy_kwh_sol": -37,
+      "supply_multiplier": 1.3,
+      "tags": [
+        "needs_heat"
+      ]
+    },
+    {
+      "id": "water",
+      "name": "Water tank",
+      "cat": "life",
+      "w": 1,
+      "h": 1,
+      "mass_t": 3,
+      "cost": 20,
+      "supply_sols": 3,
+      "tags": [
+        "water"
+      ],
+      "stackable": 2
+    },
+    {
+      "id": "crate",
+      "name": "Supply crate (O2, water, food)",
+      "cat": "life",
+      "w": 1,
+      "h": 1,
+      "mass_t": 1.5,
+      "cost": 15,
+      "supply_sols": 4,
+      "tags": [],
+      "stackable": 4
+    },
+    {
+      "id": "shelter",
+      "name": "Solar storm shelter",
+      "cat": "life",
+      "w": 2,
+      "h": 1,
+      "mass_t": 4,
+      "cost": 60,
+      "tags": [
+        "shelter"
+      ]
+    },
+    {
+      "id": "rover_pressurized",
+      "name": "Pressurized rover",
+      "cat": "mobility",
+      "w": 2,
+      "h": 2,
+      "mass_t": 8,
+      "cost": 300,
+      "energy_per_eva_kwh": 10,
+      "travel_time_factor": 0.3,
+      "protects_from_spe": true,
+      "tags": []
+    },
+    {
+      "id": "rover_open",
+      "name": "Open rover",
+      "cat": "mobility",
+      "w": 2,
+      "h": 1,
+      "mass_t": 3,
+      "cost": 90,
+      "energy_per_eva_kwh": 5,
+      "travel_time_factor": 0.4,
+      "tags": []
+    },
+    {
+      "id": "suits",
+      "name": "Extra EVA suits (2)",
+      "cat": "mobility",
+      "w": 1,
+      "h": 1,
+      "mass_t": 1,
+      "cost": 40,
+      "extra_eva_teams": 1,
+      "tags": []
+    },
+    {
+      "id": "field_kit",
+      "name": "Field kit and drill",
+      "cat": "science",
+      "w": 1,
+      "h": 1,
+      "mass_t": 1.5,
+      "cost": 35,
+      "energy_per_use_kwh": 2,
+      "tags": [
+        "contaminant"
+      ]
+    },
+    {
+      "id": "sample_containers",
+      "name": "Sterile sample containers",
+      "cat": "science",
+      "w": 1,
+      "h": 1,
+      "mass_t": 1,
+      "cost": 25,
+      "sample_slots": 6,
+      "tags": [
+        "clean",
+        "heat_sensitive"
+      ]
+    },
+    {
+      "id": "spectrometer",
+      "name": "Portable spectrometer",
+      "cat": "science",
+      "w": 1,
+      "h": 1,
+      "mass_t": 0.5,
+      "cost": 45,
+      "energy_per_use_kwh": 3,
+      "data_mb": 25,
+      "science_bonus": 5,
+      "tags": []
+    },
+    {
+      "id": "gpr",
+      "name": "Ground-penetrating radar",
+      "cat": "science",
+      "w": 1,
+      "h": 2,
+      "mass_t": 1.5,
+      "cost": 70,
+      "energy_per_use_kwh": 6,
+      "data_mb": 60,
+      "science_bonus": 7,
+      "needed_for_objective": "C",
+      "tags": []
+    },
+    {
+      "id": "met",
+      "name": "Weather station",
+      "cat": "science",
+      "w": 1,
+      "h": 1,
+      "mass_t": 0.3,
+      "cost": 15,
+      "energy_per_sol_kwh": -1,
+      "warns_dust_sols": 1,
+      "tags": []
+    },
+    {
+      "id": "medkit",
+      "name": "Advanced medical kit",
+      "cat": "medical",
+      "w": 1,
+      "h": 1,
+      "mass_t": 1,
+      "cost": 60,
+      "condition_recovery_bonus": 5,
+      "tags": [
+        "heat_sensitive"
+      ]
+    },
+    {
+      "id": "hga",
+      "name": "High-gain antenna",
+      "cat": "comms",
+      "w": 1,
+      "h": 2,
+      "mass_t": 1.5,
+      "cost": 60,
+      "energy_kwh_sol": -3.2,
+      "downlink_mb_sol": 40,
+      "tags": [
+        "emitter"
+      ]
+    },
+    {
+      "id": "uhf",
+      "name": "UHF radio (relay)",
+      "cat": "comms",
+      "w": 1,
+      "h": 1,
+      "mass_t": 0.5,
+      "cost": 20,
+      "energy_kwh_sol": -1.2,
+      "downlink_mb_sol": 100,
+      "relay_pass_loss_chance": 0.1,
+      "tags": [
+        "emitter"
+      ]
+    },
+    {
+      "id": "charger",
+      "name": "Robot charging station",
+      "cat": "power",
+      "w": 2,
+      "h": 1,
+      "mass_t": 1.5,
+      "cost": 60,
+      "energy_kwh_sol": -2,
+      "robot_recharges_per_sol": 2,
+      "tags": []
+    },
+    {
+      "id": "beacon",
+      "name": "Relay beacons (2)",
+      "cat": "comms",
+      "w": 1,
+      "h": 1,
+      "mass_t": 0.5,
+      "cost": 30,
+      "beacons": 2,
+      "relay_range_cells": 8,
+      "tags": []
+    },
+    {
+      "id": "spares",
+      "name": "Spare parts",
+      "cat": "structure",
+      "w": 1,
+      "h": 1,
+      "mass_t": 2,
+      "cost": 30,
+      "enables_improvisation": [
+        "repair"
+      ],
+      "tags": []
+    }
+  ],
+  "adjacency_rules": [
+    {
+      "id": "heat",
+      "if_tag_a": "hot",
+      "if_tag_b": [
+        "heat_sensitive",
+        "clean"
+      ],
+      "effect": {
+        "sample_value_mult": 0.5,
+        "medical_effect_mult": 0.5
+      },
+      "color": "orange",
+      "text": "Heat from the power unit spoils samples and medicine."
+    },
+    {
+      "id": "contamination",
+      "if_tag_a": "contaminant",
+      "if_tag_b": [
+        "clean"
+      ],
+      "effect": {
+        "sample_value_mult": 0.5
+      },
+      "color": "brown",
+      "text": "Drill lubricants contaminate sterile containers."
+    },
+    {
+      "id": "shielding",
+      "if_tag_a": "water",
+      "if_tag_b": [
+        "shelter"
+      ],
+      "effect": {
+        "radiation_mult": 0.5
+      },
+      "color": "blue",
+      "text": "Water around the shelter blocks radiation."
+    },
+    {
+      "id": "shelter_alone",
+      "note": "Shelter without adjacent water",
+      "effect": {
+        "radiation_mult": 0.75
+      },
+      "stretch": false
+    }
+  ],
+  "crew": [
+    {
+      "id": "vega",
+      "name": "Cmdr. Vega",
+      "role": "Commander",
+      "bonus": "+1 option shown in events; -10% improvisation risk",
+      "condition": 100
+    },
+    {
+      "id": "okoye",
+      "name": "Dr. Okoye",
+      "role": "Geologist",
+      "bonus": "+25% sample science value",
+      "condition": 100
+    },
+    {
+      "id": "tanaka",
+      "name": "Eng. Tanaka",
+      "role": "Engineer",
+      "bonus": "Repairs cost half",
+      "condition": 100
+    },
+    {
+      "id": "duarte",
+      "name": "Dr. Duarte",
+      "role": "Physician",
+      "bonus": "+8 condition recovery per sol",
+      "condition": 100
+    }
+  ],
+  "condition_rules": {
+    "eva_cost": 3,
+    "eva_cost_per_hour": 1.5,
+    "base_recovery_per_sol": 10,
+    "no_eva_below": 30,
+    "must_return_below": 15,
+    "evacuated_at": 0
+  },
+  "objectives": [
+    {
+      "id": "A",
+      "name": "Signs of ancient life",
+      "question": "Did an ancient lake hold life?",
+      "target_types": [
+        "sediment"
+      ],
+      "primary_points": 20,
+      "secondary": [
+        "clay"
+      ],
+      "needs": [
+        "sample_containers",
+        "field_kit"
+      ],
+      "real_analog": "Perseverance (Jezero)"
+    },
+    {
+      "id": "B",
+      "name": "Past climate and habitability",
+      "question": "Was early Mars habitable?",
+      "target_types": [
+        "clay"
+      ],
+      "primary_points": 20,
+      "secondary": [
+        "sediment"
+      ],
+      "needs": [
+        "field_kit"
+      ],
+      "real_analog": "Curiosity (Gale)"
+    },
+    {
+      "id": "C",
+      "name": "Water for future humans",
+      "question": "Where could explorers find water ice?",
+      "target_types": [
+        "ice"
+      ],
+      "primary_points": 22,
+      "secondary": [
+        "ridge"
+      ],
+      "needs": [
+        "gpr"
+      ],
+      "real_analog": "Mars exploration concept studies"
+    }
+  ],
+  "map": {
+    "cols": 10,
+    "rows": 8,
+    "start": [
+      2,
+      3
+    ],
+    "legend": {
+      "P": "plain",
+      "R": "rock",
+      "S": "soft sand",
+      "H": "slope",
+      "L": "lander",
+      "T": "science target"
+    },
+    "walk_hours_per_cell": {
+      "P": 0.5,
+      "R": 0.75,
+      "S": 1.0,
+      "H": 1.25,
+      "L": 0.5,
+      "T": 0.5
+    },
+    "eva_hours": 8,
+    "work_hours_per_sample": 2,
+    "rows_data": [
+      "HHHRRRSSHH",
+      "HRRPPRSSRH",
+      "RPPPTRRPPR",
+      "RPLPPPSSTR",
+      "RPPPRRSPPR",
+      "PPTRRHHRPR",
+      "PRRRTHHHRH",
+      "HHRSSSHHHH"
+    ],
+    "targets": [
+      {
+        "id": "t1",
+        "pos": [
+          4,
+          2
+        ],
+        "type": "sediment",
+        "science": 10,
+        "label": "Delta sediments"
+      },
+      {
+        "id": "t2",
+        "pos": [
+          8,
+          3
+        ],
+        "type": "clay",
+        "science": 10,
+        "label": "Clay outcrop"
+      },
+      {
+        "id": "t3",
+        "pos": [
+          2,
+          5
+        ],
+        "type": "ice",
+        "science": 12,
+        "label": "Buried ice candidate"
+      },
+      {
+        "id": "t4",
+        "pos": [
+          4,
+          6
+        ],
+        "type": "ridge",
+        "science": 6,
+        "label": "Ridge (bonus)"
+      }
+    ],
+    "note": "Hand-made, inspired by a delta-and-crater site (Jezero style). Not a real elevation extract."
+  },
+  "landing": {
+    "base_success": 0.9,
+    "penalty_per_missing_margin_pct": 0.01,
+    "note": "Show the probability and where it comes from before rolling. Landing offsets the lander by 0-2 cells only in the HARD difficulty."
+  },
+  "events": [
+    {
+      "id": "dust_storm",
+      "title": "Dust storm",
+      "frequency_weight": 3,
+      "trigger": "window B or dust season; met warns 1 sol earlier",
+      "effects": {
+        "solar_mult": 0.3,
+        "no_eva_if_unprotected": false
+      },
+      "options": [
+        {
+          "id": "shelter_in_place",
+          "label": "Stay in the habitat",
+          "cost": "Lose this sol's EVA; no risk"
+        },
+        {
+          "id": "short_eva",
+          "label": "Short EVA near the lander",
+          "cost": "EVA capped at 3 h; small suit risk"
+        },
+        {
+          "id": "push_on",
+          "label": "Push on with the plan",
+          "cost": "Power may fail; 30% suit damage"
+        }
+      ]
+    },
+    {
+      "id": "solar_particle_event",
+      "title": "Solar particle event",
+      "frequency_weight": 2,
+      "trigger": "after sol 3; weighted random",
+      "effects": {
+        "condition_loss_outside": 30,
+        "condition_loss_inside_no_shelter": 12
+      },
+      "options": [
+        {
+          "id": "use_shelter",
+          "label": "Everyone to the shelter",
+          "cost": "Dose reduced by shelter and shielding rule; EVA lost"
+        },
+        {
+          "id": "rush_back",
+          "label": "EVA crew rushes back",
+          "cost": "Lose EVA; moderate dose"
+        },
+        {
+          "id": "ignore",
+          "label": "Ignore and continue",
+          "cost": "-30 condition to those outside"
+        }
+      ]
+    },
+    {
+      "id": "equipment_failure",
+      "title": "Equipment failure",
+      "frequency_weight": 2,
+      "trigger": "more likely after 3+ EVAs with the same vehicle",
+      "options": [
+        {
+          "id": "repair",
+          "label": "Repair",
+          "cost": "Uses spare parts; Tanaka halves time"
+        },
+        {
+          "id": "improvise",
+          "label": "Improvise a fix",
+          "cost": "Visible list of what is consumed; may reduce future reliability"
+        },
+        {
+          "id": "drop_equipment",
+          "label": "Stop using the equipment",
+          "cost": "Lose that capability"
+        }
+      ]
+    },
+    {
+      "id": "medical_issue",
+      "title": "Medical issue",
+      "frequency_weight": 2,
+      "trigger": "any crew condition below 50",
+      "options": [
+        {
+          "id": "treat",
+          "label": "Treat",
+          "cost": "Medkit and Dr. Duarte; skip EVA"
+        },
+        {
+          "id": "rest",
+          "label": "Rest",
+          "cost": "Lose that person's EVA this sol"
+        },
+        {
+          "id": "continue",
+          "label": "Continue the plan",
+          "cost": "Risk of condition drop to 15"
+        }
+      ]
+    },
+    {
+      "id": "relay_pass_missed",
+      "title": "Relay pass missed",
+      "frequency_weight": 1,
+      "trigger": "only if communications rely only on UHF relay",
+      "options": [
+        {
+          "id": "buffer",
+          "label": "Buffer the data",
+          "cost": "Memory fills; send next sol"
+        },
+        {
+          "id": "prioritize",
+          "label": "Send only the most valuable data",
+          "cost": "Lower-value data may be lost"
+        }
+      ]
+    }
+  ],
+  "improvisations": [
+    {
+      "id": "ration",
+      "label": "Ration supplies",
+      "gain": "+2 supply sols",
+      "cost": "-5 condition to everyone for 2 sols"
+    },
+    {
+      "id": "cannibalize",
+      "label": "Cannibalize spare parts",
+      "gain": "Repair without proper kit",
+      "cost": "Uses spare parts item"
+    },
+    {
+      "id": "power_down_instrument",
+      "label": "Switch off an instrument",
+      "gain": "+energy",
+      "cost": "Lose that instrument's science this mission"
+    },
+    {
+      "id": "drink_shield",
+      "label": "Use shield water as drinking water",
+      "gain": "+4 supply sols",
+      "cost": "Lose the shielding effect"
+    }
+  ],
+  "scoring": {
+    "science": 35,
+    "crew": 25,
+    "engineering": 20,
+    "efficiency": 20,
+    "seals": {
+      "complete": 75,
+      "partial": 45,
+      "min_science": 27
+    },
+    "notes": "Science counts only data/samples secured and sent or returned. Samples not returned count 0. Crew: all return = full, each evacuated crew member loses points."
+  },
+  "report": {
+    "cause_chain_templates": [
+      "You chose {choice_a}, which led to {consequence_b}, which cost {outcome_c}.",
+      "The {rule} adjacency lowered the value of {item} by {percent}%.",
+      "The ascent window forced you to leave {target} unvisited."
+    ],
+    "real_analogs": [
+      {
+        "name": "CHAPEA (NASA)",
+        "text": "Four crew members living in a simulated Mars habitat for a year in Houston, to study isolation, resources and performance."
+      },
+      {
+        "name": "Apollo J-missions",
+        "text": "Crewed surface EVAs, a rover, and sample return from the Moon."
+      },
+      {
+        "name": "Perseverance",
+        "text": "Robotic sample collection at Jezero crater."
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://art/anim/events/event_dust_storm_loop.png" id="1_loop"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_0"]
+atlas = ExtResource("1_loop")
+region = Rect2(0, 0, 160, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_1"]
+atlas = ExtResource("1_loop")
+region = Rect2(160, 0, 160, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_2"]
+atlas = ExtResource("1_loop")
+region = Rect2(320, 0, 160, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_3"]
+atlas = ExtResource("1_loop")
+region = Rect2(480, 0, 160, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_4"]
+atlas = ExtResource("1_loop")
+region = Rect2(640, 0, 160, 90)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loop_5"]
+atlas = ExtResource("1_loop")
+region = Rect2(800, 0, 160, 90)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loop_5")
+}],
+"loop": true,
+"name": &"loop",
+"speed": 8.0
+}]

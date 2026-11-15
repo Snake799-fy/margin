@@ -1,0 +1,59 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" path="res://art/anim/screens/lander_descent.png" id="1_descent"]
+[ext_resource type="Texture2D" path="res://art/anim/screens/lander_landed.png" id="2_landed"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_descent_0"]
+atlas = ExtResource("1_descent")
+region = Rect2(0, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_descent_1"]
+atlas = ExtResource("1_descent")
+region = Rect2(32, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_descent_2"]
+atlas = ExtResource("1_descent")
+region = Rect2(64, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_descent_3"]
+atlas = ExtResource("1_descent")
+region = Rect2(96, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_landed_0"]
+atlas = ExtResource("2_landed")
+region = Rect2(0, 0, 32, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_landed_1"]
+atlas = ExtResource("2_landed")
+region = Rect2(32, 0, 32, 40)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_descent_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_descent_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_descent_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_descent_3")
+}],
+"loop": true,
+"name": &"descent",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 3.0,
+"texture": SubResource("AtlasTexture_landed_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_landed_1")
+}],
+"loop": true,
+"name": &"landed",
+"speed": 2.0
+}]

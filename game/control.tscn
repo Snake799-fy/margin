@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ci0gd3jmf3q0h"]
+
+[ext_resource type="Script" uid="uid://ci53wnguqtp6j" path="res://maleta.gd" id="1_0fbet"]
+[ext_resource type="PackedScene" uid="uid://bwarewvchmdr3" path="res://teste de maleta.tscn" id="2_62e2m"]
+
+[node name="Control" type="Control" unique_id=436932147]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0fbet")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=225614551]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="GridContainer" unique_id=1906778827]
+layout_mode = 2
+
+[node name="Control" parent="." unique_id=691435117 instance=ExtResource("2_62e2m")]
+layout_mode = 1

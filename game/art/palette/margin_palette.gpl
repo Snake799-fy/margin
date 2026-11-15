@@ -1,0 +1,20 @@
+GIMP Palette
+Name: MARGIN v1
+Columns: 8
+#
+ 26  16  32	outline
+ 59  31  26	mars_dark
+122  52  36	mars_rust
+181  85  46	mars_ochre
+217 140  74	mars_sand
+240 196 138	mars_light
+ 90  90 110	gray_dark
+160 160 176	gray_light
+244 240 232	white
+ 79 176  74	ok_green
+242 194  48	warn_yellow
+214  54  47	danger_red
+240 122  30	heat_orange
+122  82  48	contam_brown
+ 58 123 213	shield_blue
+143 199 240	light_blue
